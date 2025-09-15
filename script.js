@@ -1,5 +1,7 @@
 const faqCards = document.querySelectorAll(".faq-card");
+const cardsContainer = document.querySelector(".section--cards");
 function handleClick(e) {
+  if (!e.target.closest(".question-container")) return;
   console.log("clicked");
   const currentCard = e.target.closest(".faq-card");
   faqCards.forEach((card) => {
@@ -7,5 +9,4 @@ function handleClick(e) {
   });
   currentCard.classList.toggle("active");
 }
-
-faqCards.forEach((card) => card.addEventListener("click", handleClick));
+cardsContainer.addEventListener("click", handleClick);
