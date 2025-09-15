@@ -55,6 +55,7 @@ body {
 .faq-question {
   margin-bottom: 2rem;
   font-size: clamp(1.6rem, 4vw, 2rem);
+  font-weight: 600;
   transition: color 0.2s;
 }
 .faq-question:hover {
