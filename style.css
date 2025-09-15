@@ -17,7 +17,7 @@ body {
   font-family: "Work Sans", sans-serif;
   background: var(--color-Purple-100)
     url("./assets/images/background-pattern-desktop.svg") top center no-repeat;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,14 +28,12 @@ body {
   background-color: var(--color-White);
   padding: 3rem;
   border-radius: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
 }
 .header {
   display: flex;
   align-items: center;
   gap: 1.6rem;
+  margin-bottom: 3rem;
 }
 .header__icon {
   height: 4rem;
@@ -45,6 +43,13 @@ body {
 }
 .faq-card {
   border-bottom: 1px solid var(--color-Purple-100);
+  margin-bottom: 2rem;
+}
+.question-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
 }
 .faq-question {
   margin-bottom: 1.6rem;
@@ -54,6 +59,7 @@ body {
 .faq-question:hover {
   color: var(--color-Purple-600);
 }
+
 .faq-answer {
   display: none;
   color: var(--color-Purple-600);
@@ -61,4 +67,14 @@ body {
 }
 .faq-card.active .faq-answer {
   display: block;
+}
+.icon--minus {
+  display: none;
+}
+
+.faq-card.active .icon--minus {
+  display: block;
+}
+.faq-card.active .icon--plus {
+  display: none;
 }
