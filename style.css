@@ -56,14 +56,12 @@ body {
   border: none;
   background: none;
 }
-.question-container:hover {
-  color: var(--color-Purple-600);
-}
+.question-container:hover,
 .question-container:focus {
   color: var(--color-Purple-600);
-  outline: 2px solid var(--color-Purple-100);
-  outline-offset: 4px;
+  outline: none;
 }
+
 .faq-question {
   font-size: clamp(1.6rem, 4vw, 2rem);
   font-weight: 600;
